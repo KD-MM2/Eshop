@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="eshop.master.cs" Inherits="WebProject_01.eshop" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body {
+            margin: 20px;
+            padding: 0px;
+        }
+        #main {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+
+        }
+        .btn-css {
+            position: relative;　　
+            display: inline-block;
+            padding: 0.25em 0.5em;
+            text-decoration: none;
+            color: #FFF;
+            background: #fd9535;/*色*/
+            border-radius: 4px;/*角の丸み*/
+            box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+            font-weight: bold;
+            border: solid 2px #d27d00;/*線色*/
+        }
+        .btn-css:active {
+            /*押したとき*/
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+        }
+        .auto-style1 {
+            width: 1000px;
+        }
+        .auto-style2 {
+            width: 200px;
+        }
+        .auto-style3 {
+            font-size: xx-large;
+        }
+        .auto-style4 {
+            width: 230px;
+        }
+        .auto-style5 {
+            width: 38px;
+        }
+        .auto-style6 {
+            width: 122px;
+        }
+        .auto-style7 {
+            height: 24px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2" class="auto-style3">Eshop へようこそ（仮）</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="auto-style7" style="border: thin none #666666; background-color: #CC99FF">タイムセール　おすすめ</td>
+            </tr>
+            <tr border="5">
+                <td class="auto-style4" style="background-color: #FFCC66; vertical-align: top;">
+                    <table class="auto-style2" style="border-style: none; border-width: 5px; vertical-align: top">
+                        <tr>
+                            <td colspan="2">カート情報</td>
+                        </tr>
+                        <tr>
+                            <td>商品点数</td>
+                            <td class="auto-style6">
+                                <asp:Label ID="Label_商品点数" runat="server"></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>合計金額</td>
+                            <td class="auto-style6">
+                                <asp:Label ID="Label_合計金額" runat="server"></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">買い物</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <asp:LinkButton ID="LinkButton2" runat="server">カートの中身を見る</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <asp:Button ID="Button1" runat="server" Text="お会計" CssClass="btn-css"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <asp:LinkButton ID="LinkButton3" runat="server">管理者</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: top; background-color: #FFCC66;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="border-style: none; background-color: #CC99FF">&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="グルメDB_ConnectionString-Web.config Connection String" description="グルメDB_ConnectionString データベースに接続するためにアプリケーションによって web.config で使用される接続文字列。" defaultValue="Data Source=C301-014\SQLEXPRESS;Initial Catalog=グルメDB;Persist Security Info=True;User ID=gourmet;Password=gourmetpwd" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\arsuser\\Documents\\21A14\\WebSolution_03\\WebProject_01\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='グルメDB_ConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
