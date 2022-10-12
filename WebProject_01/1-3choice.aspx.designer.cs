@@ -33,6 +33,15 @@ namespace WebProject_01
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_order;
 
         /// <summary>
+        /// SqlDataSource_order_detail コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_order_detail;
+
+        /// <summary>
         /// DataList1 コントロール。
         /// </summary>
         /// <remarks>
